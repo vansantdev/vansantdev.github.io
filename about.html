@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vansant Dev | About</title>
+  <meta name="description" content="About Vansant Dev: affordable websites for small businesses built with clean HTML/CSS and modern best practices." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="Vansant Dev Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Vansant Dev</div>
+      </a>
+      <div class="navlinks">
+        <a data-nav href="pricing.html">Pricing</a>
+        <a data-nav href="portfolio.html">Portfolio</a>
+        <a data-nav href="process.html">Process</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="contact.html" class="cta">Request a Quote</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      I build affordable, professional websites for small businesses — focused on clarity, speed, and mobile-friendly design.
+      My goal is to make it easy for customers to find you and contact you.
+    </p>
+
+    <div class="split">
+      <div class="card">
+        <h3>What I focus on</h3>
+        <ul>
+          <li>Clean design and simple navigation</li>
+          <li>Fast loading pages</li>
+          <li>Contact and quote request forms</li>
+          <li>Basic SEO foundation</li>
+          <li>Clear pricing and expectations</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:vansantdev@gmail.com">vansantdev@gmail.com</a></p>
+        <p class="small">Send your business name + what you need. I’ll reply with a quote.</p>
+        <div class="form-actions" style="margin-top:12px">
+          <a class="cta" href="contact.html">Request a Quote</a>
+          <a class="ghost" href="portfolio.html">View Portfolio</a>
+        </div>
+        <p class="small" style="margin-top:10px;">
+          Fast turnaround may be available once content is received.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+      <div>© <span id="year"></span> Vansant Dev</div>
+      <div><a href="pricing.html">View Pricing</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

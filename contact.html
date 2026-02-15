@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vansant Dev | Request a Quote</title>
+  <meta name="description" content="Request a quote for your small business website. Fast turnaround may be available once content is received." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="Vansant Dev Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Vansant Dev</div>
+      </a>
+      <div class="navlinks">
+        <a data-nav href="pricing.html">Pricing</a>
+        <a data-nav href="portfolio.html">Portfolio</a>
+        <a data-nav href="process.html">Process</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="contact.html" class="cta">Request a Quote</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h2>Request a Quote</h2>
+    <p>
+      Tell me a little about your business and what you need.  
+      I’ll reply with a clear quote and timeline.
+    </p>
+
+    <div class="split">
+      <!-- FORM CARD -->
+      <div class="card">
+
+        <form class="form" action="https://formsubmit.co/vansantdev@gmail.com" method="POST">
+
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New Website Quote Request (Vansant Dev)">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <!-- Name + Email -->
+          <div class="form-row">
+            <div>
+              <div class="label">Your Name *</div>
+              <input class="input" type="text" name="name" placeholder="Name" required />
+            </div>
+            <div>
+              <div class="label">Email *</div>
+              <input class="input" type="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <!-- Business + Phone -->
+          <div class="form-row">
+            <div>
+              <div class="label">Business Name *</div>
+              <input class="input" type="text" name="business" placeholder="Business name" required />
+            </div>
+            <div>
+              <div class="label">Phone (optional)</div>
+              <input class="input" type="text" name="phone" placeholder="(xxx) xxx-xxxx" />
+            </div>
+          </div>
+
+          <!-- Package + Deadline -->
+          <div class="form-row">
+            <div>
+              <div class="label">What do you need? *</div>
+              <select class="select" name="package" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Website Build (3–5 pages)</option>
+                <option>Minor edits ($25)</option>
+                <option>Standard updates ($60–$120)</option>
+                <option>Major update / redesign</option>
+                <option>Not sure — help me choose</option>
+              </select>
+            </div>
+            <div>
+              <div class="label">Deadline (optional)</div>
+              <input class="input" type="text" name="deadline" placeholder="ASAP / next week / flexible" />
+            </div>
+          </div>
+
+          <!-- Details -->
+          <div>
+            <div class="label">Project Details *</div>
+            <textarea
+              class="textarea"
+              name="details"
+              placeholder="Describe your business, services, pages you want, and anything important I should know."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Buttons -->
+          <div class="form-actions">
+            <button class="cta" type="submit">Send Quote Request</button>
+            <a class="ghost" href="pricing.html">View Pricing</a>
+          </div>
+
+          <p class="small" style="margin-top:10px;">
+            *Required fields help me provide a faster, more accurate quote.
+          </p>
+
+          <p class="small">
+            Fast turnaround may be available once content is received
+            (logo, photos, text, services).
+          </p>
+        </form>
+      </div>
+
+      <!-- SIDE INFO CARD -->
+      <div class="card">
+        <h3>What to send (helps me move fast)</h3>
+        <ul>
+          <li>Business name + short description</li>
+          <li>Services you offer</li>
+          <li>City/state (if you want it shown)</li>
+          <li>Logo + photos (or I can use placeholders)</li>
+          <li>Links to competitors you like (optional)</li>
+        </ul>
+
+        <div class="hr"></div>
+
+        <h3>Direct Contact</h3>
+        <p>
+          Email:  
+          <a href="mailto:vansantdev@gmail.com">vansantdev@gmail.com</a>
+        </p>
+
+        <p class="small">
+          I typically respond within 24 hours.
+        </p>
+      </div>
+    </div>
+
+    <p class="small" style="margin-top:16px;">
+      *Pricing is subject to change based on project scope, complexity,
+      and client requirements. Final quotes are provided after project review.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+      <div>© <span id="year"></span> Vansant Dev</div>
+      <div><a href="portfolio.html">View Portfolio</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

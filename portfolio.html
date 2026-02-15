@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vansant Dev | Portfolio</title>
+  <meta name="description" content="Web development portfolio by Vansant Dev. Small business websites built with custom HTML/CSS." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="Vansant Dev Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Vansant Dev</div>
+      </a>
+      <div class="navlinks">
+        <a data-nav href="pricing.html">Pricing</a>
+        <a data-nav href="portfolio.html">Portfolio</a>
+        <a data-nav href="process.html">Process</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="contact.html" class="cta">Request a Quote</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h2>Portfolio</h2>
+    <p>Examples of sites I’ve built and the types of projects I can deliver.</p>
+
+    <div class="cards">
+      <!-- Project 1 -->
+      <div class="card">
+        <h3>A Country Touch</h3>
+        <p class="small">
+          Custom small business website (multi-page) with a clean layout and contact/order flow.
+        </p>
+        <div class="hr"></div>
+        <div class="form-actions">
+          <a class="cta" href="https://vansantdev.github.io/a-country-touch/" target="_blank" rel="noopener">View Live Site</a>
+          <a class="ghost" href="contact.html">Request Similar Site</a>
+        </div>
+      </div>
+
+      <!-- Placeholder -->
+      <div class="card">
+        <h3>More Projects Coming Soon</h3>
+        <p class="small">
+          I’m currently working with new small business clients. Additional projects will be added here as they are completed.
+        </p>
+        <div class="hr"></div>
+        <div class="form-actions" style="margin-top:12px;">
+          <a class="cta" href="contact.html">Request a Quote</a>
+          <a class="ghost" href="pricing.html">View Pricing</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="small" style="margin-top:16px;">
+      Want something similar? Send a quick request and I’ll reply with a quote and timeline.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+      <div>© <span id="year"></span> Vansant Dev</div>
+      <div><a href="contact.html">Request a Quote</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
