@@ -1,85 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pricing | Vansant Dev</title>
-  <meta name="description" content="Clear one-time website pricing with optional updates. No monthly fees." />
-
-  <!-- IMPORTANT: If your CSS path is different, change this line (ex: css/styles.css) -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vansant Dev | Pricing</title>
+  <meta name="description" content="Clear one-time pricing for small business websites with optional updates. No monthly fees." />
   <link rel="stylesheet" href="assets/css/styles.css" />
-
-  <!-- Small safe styling just for this page (won’t mess up your other pages) -->
-  <style>
-    .pricing-page .subtext { opacity: .85; line-height: 1.6; }
-    .pricing-page .muted { opacity: .78; }
-    .pricing-page .section { margin-top: 28px; }
-    .pricing-page .grid { display: grid; gap: 16px; }
-    .pricing-page .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .pricing-page .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .pricing-page .card { border-radius: 18px; padding: 18px; }
-    .pricing-page .card h3 { margin: 0 0 6px; }
-    .pricing-page .price { font-weight: 800; font-size: 1.25rem; margin: 8px 0 10px; }
-    .pricing-page ul { margin: 10px 0 0; padding-left: 18px; }
-    .pricing-page li { margin: 6px 0; }
-    .pricing-page .callout { border: 1px solid rgba(255,255,255,.16); }
-    .pricing-page .tiny { font-size: .92rem; }
-    .pricing-page .hr { height: 1px; background: rgba(255,255,255,.12); margin: 14px 0; }
-
-    @media (max-width: 900px) {
-      .pricing-page .grid-3 { grid-template-columns: 1fr; }
-      .pricing-page .grid-2 { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 
-<body class="pricing-page">
-
-  <!-- Header / Nav (matches your site structure — adjust link names if yours differ) -->
-  <header>
+<body>
+  <!-- EXACT SAME HEADER/NAV AS index.html (so it looks identical) -->
+  <header class="header">
     <div class="container">
       <nav class="nav">
-        <a class="brand" href="index.html">
-          <span class="logo"></span>
-          <span class="brand-name">Vansant Dev</span>
+        <a class="brand" href="index.html" aria-label="Vansant Dev Home">
+          <div class="logo" aria-hidden="true"></div>
+          <div>Vansant Dev</div>
         </a>
-
-        <div class="nav-links">
-          <a href="pricing.html" aria-current="page">Pricing</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="process.html">Process</a>
-          <a href="about.html">About</a>
-          <a class="btn btn-primary" href="contact.html">Request a Quote</a>
+        <div class="navlinks">
+          <a data-nav href="pricing.html">Pricing</a>
+          <a data-nav href="portfolio.html">Portfolio</a>
+          <a data-nav href="process.html">Process</a>
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="contact.html" class="cta">Request a Quote</a>
         </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="container">
+    <!-- HERO / TITLE -->
+    <section class="hero">
+      <div class="container">
+        <div class="panel">
+          <h1>Pricing</h1>
+          <p>
+            Clear one-time pricing for small business websites — <strong>no monthly fees</strong>.
+            Final quotes depend on scope, number of pages, and content provided.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <!-- Page Title -->
-      <section class="section">
-        <h1>Pricing</h1>
-        <p class="subtext">
-          Clear one-time pricing for small business websites — <strong>no monthly fees</strong>.
-          Final quotes depend on scope, number of pages, and content provided.
-        </p>
-      </section>
-
-      <!-- Website Builds -->
-      <section class="section">
+    <!-- WEBSITE BUILDS -->
+    <section class="section">
+      <div class="container">
         <h2>Website Builds</h2>
-        <p class="subtext muted">Choose the tier that fits your business. Most clients land in the Standard range.</p>
+        <p>Choose the tier that fits your business. Most clients land in the Standard range.</p>
 
-        <div class="grid grid-3">
+        <div class="cards">
           <div class="card">
             <h3>Starter Build</h3>
-            <div class="price">$250</div>
-            <p class="tiny muted">Best for simple, clean websites that need to launch fast.</p>
-            <div class="hr"></div>
-            <ul class="tiny">
-              <li>Up to <strong>3 pages</strong></li>
+            <p><strong>$250</strong></p>
+            <p>Best for simple, clean websites that need to launch fast.</p>
+            <ul>
+              <li><strong>Up to 3 pages</strong></li>
               <li>Mobile-friendly design</li>
               <li>Contact / quote form</li>
               <li>Basic SEO setup (titles/descriptions)</li>
@@ -88,11 +63,10 @@
 
           <div class="card">
             <h3>Standard Build</h3>
-            <div class="price">$300</div>
-            <p class="tiny muted">Best for most small businesses that want a strong, complete site.</p>
-            <div class="hr"></div>
-            <ul class="tiny">
-              <li>Up to <strong>5 pages</strong></li>
+            <p><strong>$300</strong></p>
+            <p>Best for most small businesses that want a strong, complete site.</p>
+            <ul>
+              <li><strong>Up to 5 pages</strong></li>
               <li>More sections + polish</li>
               <li>Gallery or FAQ section (if needed)</li>
               <li>Basic SEO setup</li>
@@ -101,31 +75,50 @@
 
           <div class="card">
             <h3>Enhanced Build</h3>
-            <div class="price">$350</div>
-            <p class="tiny muted">Best for businesses that want extra detail and a more premium feel.</p>
-            <div class="hr"></div>
-            <ul class="tiny">
-              <li>Up to <strong>6 pages</strong></li>
+            <p><strong>$350</strong></p>
+            <p>Best for businesses that want extra detail and a more premium feel.</p>
+            <ul>
+              <li><strong>Up to 6 pages</strong></li>
               <li>Extra sections (testimonials, service area, etc.)</li>
               <li>Premium layout/spacing pass</li>
               <li>Performance polish (image cleanup)</li>
             </ul>
           </div>
         </div>
-      </section>
 
-      <!-- Updates / Edits -->
-      <section class="section">
+        <div class="section" style="padding-top:14px;">
+          <div class="panel">
+            <h3>What’s included in every build</h3>
+            <div class="badges">
+              <div class="badge">✅ Mobile responsive</div>
+              <div class="badge">✅ Clean, modern design</div>
+              <div class="badge">✅ Fast loading</div>
+              <div class="badge">✅ Contact/Quote form</div>
+              <div class="badge">✅ Basic SEO foundation</div>
+            </div>
+
+            <div class="form-actions" style="margin-top:12px;">
+              <a class="cta" href="contact.html">Request a Quote</a>
+              <a class="ghost" href="portfolio.html">View Work</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- UPDATES & EDITS -->
+    <section class="section">
+      <div class="container">
         <h2>Updates & Edits</h2>
-        <p class="subtext muted">Need changes later? You can request edits anytime — no subscription required.</p>
+        <p>Need changes later? You can request edits anytime — no subscription required.</p>
 
-        <div class="grid grid-2">
+        <div class="cards">
           <div class="card">
             <h3>Minor Edit</h3>
-            <div class="price">$25</div>
-            <p class="tiny muted">Best for quick changes.</p>
-            <div class="hr"></div>
-            <ul class="tiny">
+            <p><strong>$25</strong></p>
+            <p>Best for small changes like quick text edits or swapping an image.</p>
+            <ul>
               <li>Text changes</li>
               <li>Swap a photo</li>
               <li>Small tweaks to one section</li>
@@ -134,11 +127,10 @@
 
           <div class="card">
             <h3>Standard Update</h3>
-            <div class="price">$60–$120</div>
-            <p class="tiny muted">Best for multiple changes across a page.</p>
-            <div class="hr"></div>
-            <ul class="tiny">
-              <li>Multiple edits</li>
+            <p><strong>$60–$120</strong></p>
+            <p>Best for multiple edits or updating several sections on a page.</p>
+            <ul>
+              <li>Multiple changes</li>
               <li>Several sections updated</li>
               <li>New content blocks</li>
             </ul>
@@ -146,55 +138,50 @@
 
           <div class="card">
             <h3>Major Update / Redesign</h3>
-            <div class="price">$150–$500+</div>
-            <p class="tiny muted">Best for bigger changes.</p>
-            <div class="hr"></div>
-            <ul class="tiny">
+            <p><strong>$150–$500+</strong></p>
+            <p>Best for bigger changes—multi-page edits, new pages, or a full refresh.</p>
+            <ul>
               <li>Multi-page edits</li>
               <li>New pages</li>
               <li>Full refresh / restructure</li>
             </ul>
           </div>
+        </div>
 
-          <!-- NEW POLICY CALLOUT -->
-          <div class="card callout">
+        <!-- POST-LAUNCH POLICY -->
+        <div class="section" style="padding-top:14px;">
+          <div class="panel">
             <h3>Post-Launch Edits</h3>
-            <p class="tiny">
+            <p class="small" style="margin-top:10px;">
               <strong>Minor revisions are included within the first 24 hours after launch</strong> to ensure everything looks correct.
               Additional changes requested after the initial review period are billed according to the standard update pricing.
             </p>
-            <div class="hr"></div>
-            <p class="tiny muted">
-              This keeps launches smooth while still allowing flexible updates later.
-            </p>
           </div>
+
+          <p class="small" style="margin-top:16px;">
+            *Pricing is subject to change based on project scope, complexity, and client requirements. Final quotes are provided after project review.
+          </p>
         </div>
-      </section>
 
-      <!-- Fine print -->
-      <section class="section">
-        <p class="tiny muted">
-          <strong>Pricing is subject to change</strong> based on project scope, complexity, and client requirements.
-          Final quotes are provided after project review.
-        </p>
-
-        <div style="margin-top: 14px;">
-          <a class="btn btn-primary" href="contact.html">Request a Quote</a>
-          <a class="btn" href="portfolio.html" style="margin-left: 10px;">View Work</a>
-        </div>
-      </section>
-
-    </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <p class="tiny muted">© <span id="year"></span> Vansant Dev</p>
+      <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+        <div>© <span id="year"></span> Vansant Dev</div>
+        <div>
+          <a href="pricing.html">Pricing</a> ·
+          <a href="portfolio.html">Portfolio</a> ·
+          <a href="contact.html">Request a Quote</a>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <script src="assets/js/main.js"></script>
   <script>
-    // Footer year (safe)
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
